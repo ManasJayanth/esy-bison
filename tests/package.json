@@ -1,0 +1,15 @@
+{
+  "name": "test-esy-bison",
+  "version": "0.1.0",
+  "description": "Test bison packaged for esy",
+  "license": "MIT",
+  "esy": {
+    "build": "which bison"
+  },
+  "dependencies": {
+    "bison": "*"
+  },
+  "resolutions": {
+    "bison": "link:../package"
+  }
+}
