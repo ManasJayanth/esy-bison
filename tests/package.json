@@ -10,6 +10,6 @@
     "bison": "*"
   },
   "resolutions": {
-    "bison": "https://github.com/prometheansacrifice/esy-bison/archive/master.zip#94dabd3016337dddc70688ddb03fa378db0e14b3"
+    "bison": "https://github.com/prometheansacrifice/esy-bison/archive/ci.zip#94dabd3016337dddc70688ddb03fa378db0e14b3"
   }
 }
