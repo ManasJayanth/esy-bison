@@ -1,0 +1,15 @@
+{
+  "name": "test-esy-bison",
+  "version": "0.1.0",
+  "description": "Test bison packaged for esy",
+  "license": "MIT",
+  "esy": {
+    "build": "which bison"
+  },
+  "dependencies": {
+    "bison": "*"
+  },
+  "resolutions": {
+    "bison": "https://github.com/prometheansacrifice/esy-bison/archive/ci.zip#94dabd3016337dddc70688ddb03fa378db0e14b3"
+  }
+}
