@@ -2,26 +2,15 @@
   "name": "esy-bison",
   "version": "3.2.1000",
   "description": "Bison packaged for esy",
-  "license": "MIT",
-  "esy": {
-    "build": "which bison"
-  },
-  "dependencies": {
-    "bison": "*"
-  },
-  "resolutions": {
-    "bison": {
-      "source": "https://ftp.gnu.org/gnu/bison/bison-3.2.1.tar.gz#sha256:01f33704298077dd39f3855ea2045bfc87f360395f52d6f4406b32fa3fdfecdd",
-      "override": {
-        "buildsInSource": true,
-        "build": [
-          "./configure --prefix=#{self.install} --disable-dependency-tracking",
-          "make"
-        ],
-        "install": [
-          "make install"
-        ]
-      }
-    }
+  "source": "https://ftp.gnu.org/gnu/bison/bison-3.2.1.tar.gz#sha256:01f33704298077dd39f3855ea2045bfc87f360395f52d6f4406b32fa3fdfecdd",
+  "override": {
+    "buildsInSource": true,
+    "build": [
+      "./configure --prefix=#{self.install} --disable-dependency-tracking",
+      "make"
+    ],
+    "install": [
+      "make install"
+    ]
   }
 }
