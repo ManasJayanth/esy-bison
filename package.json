@@ -2,8 +2,7 @@
   "name": "esy-bison",
   "version": "3.2.1000",
   "description": "Bison packaged for esy",
-  "source": "https://ftp.gnu.org/gnu/bison/bison-3.2.1.tar.gz#sha256:01f33704298077dd39f3855ea2045bfc87f360395f52d6f4406b32fa3fdfecdd",
-  "override": {
+  "esy": {
     "buildsInSource": true,
     "build": [
       "./configure --prefix=#{self.install} --disable-dependency-tracking",
@@ -12,5 +11,9 @@
     "install": [
       "make install"
     ]
+  },
+  "dependencies": {
+    "esy-automake": "prometheansacrifice/esy-automake#0d274908e251ad6f989162f70fa497570852a684",
+    "esy-autoconf": "esy-packages/esy-autoconf#94f846f3ad69fc65c65a61dd7fd3d70073dc93ea"
   }
 }
