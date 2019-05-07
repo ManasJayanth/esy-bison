@@ -5,15 +5,16 @@
   "esy": {
     "buildsInSource": true,
     "build": [
-      "./configure --prefix=#{self.install} --disable-dependency-tracking",
+      "find ./ -exec touch -t 200905010101 {} +",
+      [
+        "bash",
+        "-c",
+        "#{ os == 'windows' ? './configure --prefix=$cur__install} --host x86_64-w64-mingw32 --disable-dependency-tracking': './configure --prefix=$cur__install --disable-dependency-tracking' }"
+      ],
       "make"
     ],
     "install": [
       "make install"
     ]
-  },
-  "dependencies": {
-    "esy-automake": "prometheansacrifice/esy-automake#0d274908e251ad6f989162f70fa497570852a684",
-    "esy-autoconf": "esy-packages/esy-autoconf#94f846f3ad69fc65c65a61dd7fd3d70073dc93ea"
   }
 }
