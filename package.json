@@ -4,6 +4,12 @@
   "description": "Bison packaged for esy",
   "esy": {
     "buildsInSource": true,
+    "exportedEnv": {
+      "PATH": {
+        "scope": "global",
+        "val": "#{ (os == 'windows' ? '/usr/x86_64-w64-mingw32/sys-root/mingw/bin': '') : $PATH}"
+      }
+    },
     "build": [
       "find ./ -exec touch -t 200905010101 {} +",
       [
