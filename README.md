@@ -1,3 +1,6 @@
+[![Build Status](https://dev.azure.com/prometheansacrifice/esy-packages/_apis/build/status/prometheansacrifice.esy-bison?branchName=master)](https://dev.azure.com/prometheansacrifice/esy-packages/_build/latest?definitionId=36&branchName=master)
+TODO: Windows support
+
 This package contains the GNU Bison parser generator.
 
 * Installation
